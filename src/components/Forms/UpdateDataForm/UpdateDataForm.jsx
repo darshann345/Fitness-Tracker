@@ -103,7 +103,7 @@ export default function UpdateDataForm({
         />
 
         <input
-          type="text"
+          type="number"
           name="calorie_intake"
           placeholder="Enter Today's Calorie Intake"
           value={formData.calorie_intake}
@@ -112,7 +112,7 @@ export default function UpdateDataForm({
         />
 
         <input
-          type="text"
+          type="number"
           name="calorie_burned"
           placeholder="Enter Today's Calorie Burned"
           value={formData.calorie_burned}
