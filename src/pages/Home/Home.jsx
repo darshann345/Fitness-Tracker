@@ -96,12 +96,12 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <h1>Health Tracker</h1>
+      <h1>Health And Fitness Tracker'</h1>
 
       <div className={styles.cardsWrapper}>
         <Card
           title="Update Today's Data"
-          buttonText="+ Add Data"
+          buttonText="+ Add data"
           buttonType="success"
           success={false}
           handleClick={() => {
