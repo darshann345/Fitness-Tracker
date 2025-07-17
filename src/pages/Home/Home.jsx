@@ -96,7 +96,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <h1>Health And Fitness Tracker'</h1>
+      <h1>Health And Fitness Tracker</h1>
 
       <div className={styles.cardsWrapper}>
         <Card
