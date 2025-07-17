@@ -9,21 +9,22 @@ export default function TransactionCard({ details, handleDelete, handleEdit }) {
     return (
         <div className={styles.card}>
             <div className={styles.cardInner}>
-                
+
                 <div className={styles.cardInfo}>
                     {/* <h5>{details.title}</h5> */}
                     {/* <p>{details.date}</p> */}
-                    <p className = {styles.short_description}>{details.short_description}</p>
-                    <div className = {styles.daily_calories_data}>
-                        <p>Calorie Intake: {details.calorie_intake}</p>
-                        <p>Calorie Burned: {details.calorie_burned}</p>
+                    <p className={styles.short_description}>{details.short_description}</p>
+                    <div className={styles.daily_calories_data}>
+                        <p>Calories Intake = {details.calorie_intake}</p>
+                        <p>Calories Burned = {details.calorie_burned}</p>
+
                     </div>
                 </div>
             </div>
 
             <div className={styles.cardInner}>
                 <div className={styles.cardButtonWrapper}>
-                    <p className = {styles.date}>{details.date}</p>
+                    <p className={styles.date}>{details.date}</p>
 
                     <button className={styles.cardDelete} onClick={handleDelete}>
                         <IoMdCloseCircleOutline />
