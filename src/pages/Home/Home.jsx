@@ -93,6 +93,26 @@ export default function Home() {
       localStorage.setItem("balance", balance);
     }
   }, [balance]);
+  useEffect(() => {
+    const localBalance = localStorage.getItem("balance");
+
+    if (localBalance) {
+      setBalance(Number(localBalance));
+    } else {
+      setBalance(5000);
+      localStorage.setItem("balance", 5000);
+    }
+
+    const items = JSON.parse(localStorage.getItem("healthAndFitness"));
+    sethealthStatsList(items || []);
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (healthStatsList.length > 0 || isMounted) {
+      localStorage.setItem("healthAndFitness", JSON.stringify(healthStatsList));
+    }
+  }, [healthStatsList]);
 
   return (
     <div className={styles.container}>
