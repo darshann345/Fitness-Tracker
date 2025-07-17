@@ -1,0 +1,58 @@
+.barChartContainer {
+  padding: 20px;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  margin: 20px 0;
+  width:50%;
+  height:100%;
+}
+
+.barChartContainer h2 {
+  font-size: 28px;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.chartWrapper {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.chartWrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.chartWrapper::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.chartWrapper::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.barLabel {
+  font-size: 14px;
+  color: #333;
+}
+
+.barValue {
+  font-weight: bold;
+  color: #444;
+}
+
+@media (max-width: 767px) {
+  .barChartContainer h2 {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .chartWrapper {
+    padding: 10px;
+  }
+}

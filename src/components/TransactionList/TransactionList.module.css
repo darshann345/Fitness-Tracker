@@ -1,0 +1,22 @@
+.list, 
+.emptyTransactionsWrapper{
+    background:#fff;
+    border-radius: 10px;
+    padding:24px;
+    color:rgba(99, 97, 97, 1);
+}
+
+.transactionsWrapper h2{
+    font-size: 28px;
+    color:#fff;
+    font-style: italic;
+    margin-bottom:10px;
+
+
+}
+
+@media(max-width:767px){
+    .transactionsWrapper h2{
+        text-align: center;
+    }
+}
