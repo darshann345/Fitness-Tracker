@@ -125,7 +125,7 @@ export default function Home() {
             { name: "Intake", value: calorieTaken.intake },
             { name: "Burned", value: calorieTaken.burned },
           ]}
-          title="Over All Data"
+          title="Overall Data"
         />
       </div>
 
